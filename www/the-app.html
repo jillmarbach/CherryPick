@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The CherryPick App</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+	<link rel="stylesheet" href="style/style.css"></head>
+<body>
+<div class="header">
+	<a href="index.html"><img src="logo.svg" alt="CherryPick logo"></a>
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="the-app.html">The App</a>
+		<a href="why-cherrypick.html">Why CherryPick?</a>
+	</div>
+	<hr>
+</div>
+<main class="app-body">
+	<a id="top" title="Back to top" href="the-app.html">⬆</a>
+	<section class="app-about">
+		<img src="mockup-2.png" alt="CherryPick mockup">
+		<div class="app-flexbox">
+			<button class="app-store" onclick="location.href='https://www.apple.com/ios/app-store/'"><img src="apple.png" alt="Apple logo">Download CherryPick from the App Store</button>
+			<button class="app-store" onclick="location.href='https://play.google.com/store?hl=en_US'"><img src="android.svg" alt="Android logo">Download CherryPick from the Play Store</button>
+		</div>
+		<div class="app-article">
+			<p>With 20 million matches to date, CherryPick is the newest app for meeting new people. Do you know exactly what you want but can never seem to find it? We know the feeling. That’s why CherryPick is designed for help you find exactly what you want. </p>
+			<p>CherryPick’s bunches are designed to bring like-minded people together so they can meet, chat, and maybe find love. Whatever you’re looking for, no matter how specific, you can find or create the bunch for you.</p>
+			<p>With no limits on swipes and no time limits to make your move, CherryPick is a great place to dive into the singles world.</p>
+			<p>Now, let’s get started. And remember, when in doubt, be picky.</p>
+		</div>
+	</section>
+	<section class="review2">
+		<img src="stars.svg" alt="Stars">
+		<p>I found love and it’s all thanks to CherryPick!</p>
+	</section>
+	<div class="buttonpadding"><button onclick="location.href='why-cherrypick.html'">More News and Testimonials</button></div>
+</main>
+	<div class="footer">
+		<div class="social-media">
+			<a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter logo"></a>
+			<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook logo"></a>
+			<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram logo"></a>
+		</div>
+		<div class="cherry"><a href="index.html"><img src="favicon.svg" alt="Cherry logo"></a></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(window).scroll(function() {
+		    var height = $(window).scrollTop();
+		    if (height > 140) {
+		        $('#top').show();
+		    } else {
+		        $('#top').hide();
+		    }
+		});
+		$(document).ready(function() {
+		    $("#top").click(function(event) {
+		        event.preventDefault();
+		        $("html, body").animate({ scrollTop: 0 }, "slow");
+		        return false;
+		    });
+		
+		});
+	</script>
+</body>
+</html>

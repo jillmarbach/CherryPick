@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About CherryPick</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+	<link rel="stylesheet" href="style/style.css"></head>
+<body>
+<div class="header">
+	<a href="index.html"><img src="logo.svg" alt="CherryPick logo"></a>
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="the-app.html">The App</a>
+		<a href="why-cherrypick.html">Why CherryPick?</a>
+	</div>
+	<hr>
+</div>
+<main class="about-body">
+	<a id="top" title="Back to top" href="about.html">⬆</a>
+	<div class="signing-up"></div>
+	<h1 class="h1-padding">What am I really signing up for?</h1>
+	<p class="signing">Like all the most fun dating apps, CherryPick lets you swipe right on people you like and say “no thanks” to people you don’t, but we have one thing those other guys don’t: our patented bunches. Bunches are groups of like-minded people interesting in meeting people from that group. It could be artists, introverts or regulars at your local bar.</p>
+	<section class="pitch">
+		<img src="profile.jpg" alt="A girl picking cherry blossoms">
+		<div class= "pitch-article">
+			<p>Make your profile, add some photos, and start finding people. We have hundreds of bunches, and new ones are added all the time. Switching in and out of bunches is easy, and all your matches go to the same place.</p>
+			<p>CherryPick is perfect if you know what you’re looking for—say, a dog lover—or if you’re looking for some inspiration. Check out unique bunches like true crime fans, self-employed people or Costco members.<p>
+		</div>
+	</section>
+	<h1>Here are some of our favorite bunches!</h1>
+	<section class="looking">
+		<h1 class="dog-lovers">Dog Lovers</h1>
+		<h1 class="musicians">Musicians</h1>
+	</section>
+	<div class="buttonpadding"><button onclick="location.href='the-app.html'">See For Yourself</button></div>
+</main>
+	<div class="footer">
+		<div class="social-media">
+			<a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter logo"></a>
+			<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook logo"></a>
+			<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram logo"></a>
+		</div>
+		<div class="cherry"><a href="index.html"><img src="favicon.svg" alt="Cherry logo"></a></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(window).scroll(function() {
+		    var height = $(window).scrollTop();
+		    if (height > 140) {
+		        $('#top').show();
+		    } else {
+		        $('#top').hide();
+		    }
+		});
+		$(document).ready(function() {
+		    $("#top").click(function(event) {
+		        event.preventDefault();
+		        $("html, body").animate({ scrollTop: 0 }, "slow");
+		        return false;
+		    });
+		
+		});
+	</script>
+</body>
+</html>

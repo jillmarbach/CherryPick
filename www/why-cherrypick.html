@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Why CherryPick?</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+	<link rel="stylesheet" href="js/swiper.min.css">
+	<link rel="stylesheet" href="style/style.css"></head>
+<body>
+<div class="header">
+	<a href="index.html"><img src="logo.svg" alt="CherryPick logo"></a>
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="the-app.html">The App</a>
+		<a href="why-cherrypick.html">Why CherryPick?</a>
+	</div>
+	<hr>
+</div>
+<main class="why-body">
+	<a id="top" title="Back to top" href="why-cherrypick.html">⬆</a>
+	<div class="testimonials">
+		<h1>Testimonials</h1>
+		<ul class="reviews">
+			<li><img src="stars-white.svg" alt="Stars"><p>It made me feel okay for being picky about what I want. It’s the validation I needed.</p></li>
+			<li><img src="stars-white.svg" alt="Stars"><p>I found love and it’s all thanks to CherryPick!</p></li>
+			<li><img src="stars-white.svg" alt="Stars"><p>Just a cool place to meet people. It’s fun and thinks about online dating differently.</p></li>
+		</ul>
+	</div>
+	<img src="editors-choice.png" alt="App Store Editors' Choice">
+	<p class="choice">2020 Editor's Choice on the App Store</p>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<section class="news-article">
+					<img src="best-times.jpg" alt="Couple smiling">
+					<div>
+						<h1>These are the Best Times to Get on CherryPick, According to Data</h1>
+						<p>While there isn’t a bad time to get on CherryPick, we know you want to make the most of your precious few free hours. We mined our data to let you know when’s best to try and find someone.</p>
+						<p>If you’re between 18 and 22, the best time to hop on is 7-10pm.</p>
+						<p>If you’re 23 and over, the best time for you 6-9pm.</p>
+						<p>Of course, these times vary a little bit depending on the ages of folks you're interested in, so make so to take that into account too.</p>
+						<p>Read more <a href="#">here</a>.</p>
+					</div>
+				</section>
+			</div>
+  			<div class="swiper-slide">
+  				<section class="news-article">
+						<img src="long-distance.jpg" alt="Man looking at the sky">
+						<div>
+							<h1>Long-Distance Dating With No Meetup in Sight? Here's Some Great Advice</h1>
+							<p>The funny thing about being in a long distance relationship in the age of coronavirus is that, in theory, nothing has changed. You’re still far away from your partner, unable to see each other IRL on a daily basis.</p>
+							<p>The reality is, of course, a little more complex. You’re...well, still far away from your partner, unable to see each other IRL on a daily basis. Your communication still relies heavily on phone calls and FaceTimes. But now you have to contend with an onslaught of bad and scary news from all corners of the globe.</p>
+							<p>Read more <a href="#">here</a>.</p>
+						</div>
+					</section>
+			</div>
+			<div class="swiper-slide">
+				<section class="news-article">
+					<img src="stay-home.jpg" alt="Women on her phone">
+					<div>
+						<h1>Stay Home And Put Yourself Out There With These New Virtual Dating Tools</h1>
+						<p>First things first: We know that not everyone is into Video Chatting with their match, and that’s totally okay! We encourage you to connect in any way you’re comfortable (so long as you’re keeping physical distance). But if you’re up for Video Chatting, let your matches know!</p>
+						<p>When you’re swiping, just look for the Virtual Date profile and match with it. After adding the info, you’ll be able to filter potential matches to find people who are also interested in virtual dating.</p>
+						<p>Read more <a href="#">here</a>.</p>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+    </div>
+	<h1>What are you waiting for?</h1>
+	<p>It’s your time to find exactly what you want.</p>
+	<div class="buttonpaddingbottom"><button onclick="location.href='the-app.html'">Download Now</button></div>
+</main>
+	<div class="footer">
+		<div class="social-media">
+			<a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter logo"></a>
+			<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook logo"></a>
+			<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram logo"></a>
+		</div>
+		<div class="cherry"><a href="index.html"><img src="favicon.svg" alt="Cherry logo"></a></div>
+	</div>
+<script src="js/swiper.min.js"></script>
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })
+</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(window).scroll(function() {
+		    var height = $(window).scrollTop();
+		    if (height > 140) {
+		        $('#top').show();
+		    } else {
+		        $('#top').hide();
+		    }
+		});
+		$(document).ready(function() {
+		    $("#top").click(function(event) {
+		        event.preventDefault();
+		        $("html, body").animate({ scrollTop: 0 }, "slow");
+		        return false;
+		    });
+		
+		});
+	</script>
+</body>
+</html>

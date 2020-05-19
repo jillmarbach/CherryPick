@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CherryPick</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="header">
+	<a href="index.html"><img src="logo.svg" alt="CherryPick logo"></a>
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="the-app.html">The App</a>
+		<a href="why-cherrypick.html">Why CherryPick?</a>
+	</div>
+	<hr>
+</div>
+<main class="wrapper">
+	<div class="home-body">
+	<a id="top" title="Back to top" href="#">⬆</a>
+		<section class="about">
+		<div class="cherry-image"></div>
+			<div class="background">
+				<h1>What's CherryPick anyway?</h1>
+				<p>This is a new dating app where you can find exactly what you’re looking for. Find or create the perfect bunch for you.</p>
+				<div class="button"><button onclick="location.href='about.html'">Find Out More</button></div>
+			</div>
+		</section>
+		<section class="mockup-and-button">
+			<div class="app-mockup">
+				<p class="create">Create a profile that’s uniquely you with photos, a bio and more.</p>
+				<p class="easily">Easily track matches and messages from all your bunches.</p>
+				<img class="mockup-1" src="mockup-1.png" alt="App Homepage Mockup">
+				<p class="check">Check out what bunches are popular, unique groups that are 🔥, and easily find the bunches you’ve created.</p>
+				<p class="swipe">Swipe on folks you’re interested in and watch sparks fly!</p>
+			</div>
+			<div class="buttonpaddingbottom"><button onclick="location.href='the-app.html'">Download Now</button></div>
+		</section>
+		<section class="review">
+			<img src="stars.svg" alt="5 stars">
+			<p>It made me feel okay for being picky about what I want. It’s the validation I needed.</p>
+		</section>
+		<div class="buttonpadding"><button onclick="location.href='why-cherrypick.html'">More News and Testimonials</button></div>
+		<h1>Follow us on Instagram @CherryPickApp</h1>
+		<section class="instagram">
+			<div><a href="https://www.instagram.com" target="_blank"><img src="instagram-post-1.png" alt="Tweet that reads, 'New dating App idea. Called 7.5. Only for people who are like a strong 7 maybe an 8 on a good day. Who look kinda athletic but would probably die if they had to run a mile. Have depression but the kind that makes you funny. Cars Check engine light is on. No one else is allowed'"></a></div>
+			<div><a href="https://www.instagram.com" target="_blank"><img src="instagram-post-2.jpg" alt="Two girls hugging"></a></div>
+			<div><a href="https://www.instagram.com" target="_blank"><img src="instagram-post-3.png" alt="Photo of text that reads, 'There is love out there that doesn't make you work so hard."></a></div>
+			<div><a href="https://www.instagram.com" target="_blank"><img src="instagram-post-4.jpg" alt="Holding hands with a heart"></a></div>
+		</section>
+	</div>
+</main>
+	<div class="footer">
+		<div class="social-media">
+			<a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter logo"></a>
+			<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook logo"></a>
+			<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram logo"></a>
+		</div>
+		<div class="cherry"><a href="index.html"><img src="favicon.svg" alt="Cherry logo"></a></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(window).scroll(function() {
+		    var height = $(window).scrollTop();
+		    if (height > 140) {
+		        $('#top').show();
+		    } else {
+		        $('#top').hide();
+		    }
+		});
+		$(document).ready(function() {
+		    $("#top").click(function(event) {
+		        event.preventDefault();
+		        $("html, body").animate({ scrollTop: 0 }, "slow");
+		        return false;
+		    });
+		
+		});
+	</script>
+<!-- 
+	<script src="breakpoints.min.js"></script>
+	<script type="text/javascript">
+	    Breakpoints({
+        mobile: {
+            min: 0,
+            max: 699
+        },
+        desktop: {
+        	min: 700,
+        	max: Infinity
+        }
+        });
+        Breakpoints.on('desktop', {
+        	function () {
+        	document.getElementById('#top').style.display = 'none';
+        	}
+        });
+	</script> -->
+</body>
+</html>
